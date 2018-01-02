@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Users.LoginContol">
+   <children>
+      <ImageView fx:id="ImageZerli" fitHeight="756.0" fitWidth="581.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/ZerliLogo.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="TitleLabel" layoutX="187.0" layoutY="22.0" text="Login" textFill="LIME">
+         <font>
+            <Font name="System Bold Italic" size="76.0" />
+         </font></Label>
+      <Label fx:id="UserNameLabel" layoutX="78.0" layoutY="371.0" text="UserName:" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="Password" layoutX="94.0" layoutY="428.0" text="Password:" textFill="RED">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="262.0" layoutY="379.0" prefHeight="35.0" prefWidth="177.0" promptText="Enter here your username" />
+      <PasswordField fx:id="txtPassword" layoutX="262.0" layoutY="436.0" prefHeight="35.0" prefWidth="177.0" promptText="Enter Yous Password" />
+      <Button fx:id="ConnectBtn" layoutX="365.0" layoutY="497.0" mnemonicParsing="false" onAction="#ConnectToSystemEvent" prefHeight="43.0" prefWidth="99.0" text="Connect" />
+   </children>
+</AnchorPane>
